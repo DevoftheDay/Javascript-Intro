@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Method Array</title>
+</head>
+<body>
+    <h2>Methods in Arrays</h2>
+    
+    <p id="myjoin"></p>
+    <p id="original"></p>
+    <p id="myfirstpop"></p>
+    <p id="mysecondpop"></p>
+<script>
+    var fruits = ["Banana" , "Orange" , "Grape" , "Mango"]
+
+    document.getElementById("myjoin").innerHTML = fruits.join(" * ");
+    document.getElementById("original").innerHTML = fruits;
+    fruits.pop();
+    document.getElementById("myfirstpop").innerHTML = fruits;
+    fruits.pop();
+    document.getElementById("mysecondpop").innerHTML = fruits;
+</script>
+</body>
+</html>
