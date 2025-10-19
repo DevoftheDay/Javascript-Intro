@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Evaluating Variables JS</title>
+</head>
+<body>
+    <p>Click the button to evaluate the Javascript function</p>
+    <button onclick="myFunction()">Try it.</button>
+    <p id="result"></p>
+    <script>
+        function myFunction() {
+            var x = 20;
+            var y = 80;
+            var a = eval("x + y") + "<br>";
+            var b = eval("x * y") + "<br>";
+            var c = eval("y / x") + "<br>";
+
+            var res = a + b + c;
+            document.getElementById("result").innerHTML = res;
+        }
+    </script>
+</body>
+</html>
